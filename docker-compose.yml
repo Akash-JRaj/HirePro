@@ -1,0 +1,18 @@
+version : "3.8"
+
+services:
+  frontend:
+    build: ./HirePro-FrontEnd
+    ports:
+      - 5173:5173
+  backend:
+    build: ./joblisting
+    ports:
+      - 8080:8080
+#   mongo_db:
+#     image: mongo:4.0-xenial
+#     ports:
+#       - 27017:27017
+      
+# volumes:
+#   database:
